@@ -1,7 +1,4 @@
 <template>
-    <div>
-        <h1> Resume Page output: {{ msg }} </h1>
-    </div>
     <div class="grid-container-resume">
         <div class="grid-item-header-1">
             <h3>Abhishek Pai</h3>
@@ -127,7 +124,7 @@
             </ul>
             <hr>
         </div>
-        <div class="grid-item">
+        <div class="grid-item-education">
             <h3 class="grid-item-heading">Education</h3>
             <h4>MSc Computer Science / University of Birmingham</h4>
             <h5 class="grid-item-subtitle">September 2016 - September 2017</h5>
@@ -147,7 +144,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+
+/* May need to research and add column divisions instead of current implementation of grid-container.*/
+
 div.grid-container-resume {
     display: grid;
     grid-template-areas: 'myArea myArea';
@@ -165,6 +165,14 @@ div.grid-item-header-1 {
 
 div.grid-item-header-2 {
     text-align: right;
+    color: #d44500;
+}
+
+/* Need to figure out how to set the colour of the href to the desired value of #d44500.*/
+a.link, a.visited, a.active, a.hover {
+    /* color: #d44500; */
+    /* background-color: #d44500; */
+    text-decoration: none;
 }
 
 div.grid-item {
@@ -174,6 +182,12 @@ div.grid-item {
 div.grid-item-experience {
     text-align: left;
     grid-area: 3 / 1 / span 4 / 1;
+}
+
+/* Need to fix the formatting of the HTML grid. */
+div.grid-item-education {
+    text-align: left;
+    grid-area: 7 / 1 / span 4 / 1;
 }
 
 h3.grid-item-heading {
