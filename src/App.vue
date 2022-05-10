@@ -1,19 +1,15 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <MainPage msg="This is a testvalue that I want returned back to the MainPage.vue" />
+  <Resume msg="Using this to test the Resume." />
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import MainPage from "./components/MainPage.vue"
-
+import Resume from "./components/Resume.vue"
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
-    MainPage
+    Resume
   }
 }
 </script>
