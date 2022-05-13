@@ -1,20 +1,15 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <MainPage msg="This is a testvalue that I want returned back to the MainPage.vue" />
+  <NavigationBar msg="Navigation Bar which should be utilised universally across the website." />
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import MainPage from "./components/MainPage.vue"
-
+import NavigationBar from "./components/NavigationBar.vue"
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
-    MainPage
-  }
+    NavigationBar
+}
 }
 </script>
 
