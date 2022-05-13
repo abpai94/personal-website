@@ -1,6 +1,13 @@
 <template>
-    <div class="Testing Universal Navigation Bar">
-        <h1> {{ msg }} </h1>
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href=#app>Home</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <div>
+        <p> {{ msg }} </p>
+        <p>Testing out the navigation bar</p>
     </div>
 </template>
 
@@ -9,8 +16,23 @@
 export default {
     name: 'NavigationBar',
     props: {
-        msg:String
+        msg: String
     }
 }
 
 </script>
+
+<style>
+li {
+    position: relative;
+    display: inline-block;
+    /* box-sizing: 100px; */
+    width: 400px;
+    /* position:inherit; */
+    padding: 8px;
+    /* margin: 0 auto; */
+    background-color: #d44500;
+    /* margin: 5; */
+    /* padding: 50; */
+}
+</style>
