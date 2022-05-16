@@ -8,7 +8,6 @@
                 <a href="/home">Enter</a>
             </p>
         </div>
-
     </body>
 </template>
 
@@ -23,24 +22,33 @@ export default {
 <style>
 * {
     margin: 0px;
-}
-h1 {
-    font-weight: bold;
-    text-align: center;
-    font-size: 500%;
     color: aliceblue;
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    font-weight: bold;
+    font-size: 500%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 h4 {
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 85%;
     font-weight: bold;
     font-size: 150%;
-    color: aliceblue;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 a, p {
-    text-align: center;
-    color: aliceblue;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .splash-image {
