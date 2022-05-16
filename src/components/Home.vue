@@ -1,14 +1,15 @@
 <template>
-<h1>
+    <NavigationBar>
+
+    </NavigationBar>
+
+    <!-- <h1>
   My personal website.
-</h1>
-<NavigationBar>
+</h1> -->
+    <!-- <NavigationBar msg="Navigation Bar which should be utilised universally across the website." /> -->
+    <!-- <Resume></Resume> -->
 
-</NavigationBar>
-  <!-- <NavigationBar msg="Navigation Bar which should be utilised universally across the website." /> -->
-  <!-- <Resume></Resume> -->
-
-      <!-- <div class="col-12 bg-light">
+    <!-- <div class="col-12 bg-light">
         <router-view />
     </div> -->
 
@@ -19,21 +20,25 @@ import NavigationBar from "./NavigationBar.vue"
 // import Resume from "./Resume.vue"
 
 export default {
-  name: 'HomePage',
-  components: {
-    NavigationBar
-}
+    name: 'HomePage',
+    components: {
+        NavigationBar
+    }
 }
 
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+} */
+
+* {
+    margin: 0px;
 }
 </style>

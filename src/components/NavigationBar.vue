@@ -1,18 +1,17 @@
 <template>
-    <nav class="navigation-bar">
-        <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/resume">Resume</router-link></li>
-            <!-- <li><a href="/Resume">Contact me</a></li> -->
-        </ul>
-    </nav>
+    <section class="navigation-bar">
+        <button onclick="location.href='/'">Home</button>
+        <!-- <router-link to="/">Home</router-link> -->
+        <button onclick="location.href='/resume'">Resume</button>
+        <!-- <router-link to="/resume">Resume</router-link> -->
+    </section>
     <!-- <div class="col-12 bg-light">
         <router-view />
     </div> -->
-    <div>
-        <!-- <p> {{ msg }} </p> -->
-        <!-- <p>Testing out the navigation bar</p> -->
-    </div>
+    <!-- <div>
+        <p> {{ msg }} </p>
+        <p>Testing out the navigation bar</p>
+    </div> -->
 </template>
 
 <script>
@@ -27,20 +26,30 @@ export default {
 </script>
 
 <style>
-li {
-    /* position: fixed; */
-    display: inline-block;
-    /* left: 100; */
-    /* right: 50; */
-    /* top: 50; */
-    /* z-index: 100; */
-    /* box-sizing: 100px; */
-    width: 20vw;
-    /* position:inherit; */
+* {
+    margin: 0px;
+    top: 0;
+    left: 0px;
+    right: 0px;
     padding: 8px;
-    /* margin: 0 auto; */
+}
+
+section.navigation-bar {
     background-color: #d44500;
-    /* margin: 5; */
-    /* padding: 50; */
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0px;
+    right: 0px;
+}
+
+button {
+    font-size: 20px;
+    display: inline-block;
+    background-color: #d44500;
+    color: aliceblue;
+    /* border: 0; */
+    border-color: #d44500;
 }
 </style>
