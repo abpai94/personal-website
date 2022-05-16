@@ -1,13 +1,17 @@
 <template>
     <nav class="navigation-bar">
         <ul>
-            <li><a href=#app>Home</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/resume">Resume</router-link></li>
+            <!-- <li><a href="/Resume">Contact me</a></li> -->
         </ul>
     </nav>
+    <!-- <div class="col-12 bg-light">
+        <router-view />
+    </div> -->
     <div>
-        <p> {{ msg }} </p>
-        <p>Testing out the navigation bar</p>
+        <!-- <p> {{ msg }} </p> -->
+        <!-- <p>Testing out the navigation bar</p> -->
     </div>
 </template>
 
@@ -24,10 +28,14 @@ export default {
 
 <style>
 li {
-    position: relative;
+    /* position: fixed; */
     display: inline-block;
+    /* left: 100; */
+    /* right: 50; */
+    /* top: 50; */
+    /* z-index: 100; */
     /* box-sizing: 100px; */
-    width: 400px;
+    width: 20vw;
     /* position:inherit; */
     padding: 8px;
     /* margin: 0 auto; */
