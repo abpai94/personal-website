@@ -1,7 +1,7 @@
 <template>
 
     <body>
-        <div class="background-image">
+        <div class="splash-image">
             <h1>Abhishek Pai</h1>
             <h4>Software Engineer</h4>
             <p>
@@ -21,9 +21,11 @@ export default {
 </script>
 
 <style>
+* {
+    margin: 0px;
+}
 h1 {
     font-weight: bold;
-    padding-top: 600px;
     text-align: center;
     font-size: 500%;
     color: aliceblue;
@@ -41,11 +43,9 @@ a, p {
     color: aliceblue;
 }
 
-.background-image {
+.splash-image {
     background-size: cover;
-    padding: 0 0 0 0;
-    height: 1024px;
-    padding-top: 1px;
+    height: 100vh;
     background-image: url('@/assets/background.JPG');
 }
 </style>
