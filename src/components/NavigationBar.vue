@@ -1,17 +1,8 @@
 <template>
     <section class="navigation-bar">
         <button class="buttons" onclick="location.href='/'">Home</button>
-        <!-- <router-link to="/">Home</router-link> -->
         <button class="buttons" onclick="location.href='/resume'">Resume</button>
-        <!-- <router-link to="/resume">Resume</router-link> -->
     </section>
-    <!-- <div class="col-12 bg-light">
-        <router-view />
-    </div> -->
-    <!-- <div>
-        <p> {{ msg }} </p>
-        <p>Testing out the navigation bar</p>
-    </div> -->
 </template>
 
 <script>

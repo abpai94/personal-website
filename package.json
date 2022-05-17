@@ -53,7 +53,7 @@
   },
   "homepage": "https://github.com/abpai94/personalWebsite#readme",
   "license": "ISC",
-  "readme": "ERROR: No README data found!",
+  "readme": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abpai94/personalWebsite.git"
