@@ -128,7 +128,7 @@ export default {
 
 <style>
 body {
-    padding: 100px 350px 0px 350px;
+    padding: 100px 500px 0px 500px;
     text-align: left;
 }
 
@@ -154,7 +154,11 @@ body {
 
 .experience-grid {
     grid-column-end: span 1;
-    grid-row-end: span 5;
+    grid-row-end: span 6;
+}
+
+.tools-grid {
+    grid-row-end: span 1;
 }
 
 h3 {
