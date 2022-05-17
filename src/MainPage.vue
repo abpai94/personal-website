@@ -1,14 +1,12 @@
 <template>
-    <body>
         <div class="splash-image">
             <h1>Abhishek Pai</h1>
             <h4>Software Engineer</h4>
             <p>
                 <router-link to="/home">Enter</router-link>
             </p>
-              <router-view></router-view>
+            <router-view></router-view>
         </div>
-    </body>
 </template>
 
 <script>
@@ -44,15 +42,14 @@ h4 {
     transform: translateX(-50%) translateY(-50%);
 }
 
-a,
-p {
+a, p {
     position: absolute;
     left: 50%;
     top: 90%;
     transform: translateX(-50%) translateY(-50%);
 }
 
-.splash-image {
+div.splash-image {
     background-size: cover;
     height: 100vh;
     background-image: url('@/assets/background.JPG');
