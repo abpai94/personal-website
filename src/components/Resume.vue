@@ -1,10 +1,10 @@
 <template>
-    <div class="grid-container-resume">
-        <div class="grid-item-header-1">
+    <div class="grid-container">
+        <div class="header-left">
             <h3>Abhishek Pai</h3>
             <h4>Lyon, France (Remote)</h4>
         </div>
-        <div class="grid-item-header-2">
+        <div class="header-right">
             <p>+447552770334</p>
             <p>
                 <a href="mailto:abpai94@gmail.com">
@@ -17,8 +17,8 @@
                 </a>
             </p>
         </div>
-        <div class="grid-item">
-            <h3 class="grid-item-heading">Skills</h3>
+        <div class="skills-grid">
+            <h3>Skills</h3>
             <ul>
                 <li>Autonomous and proactive problem solver.</li>
                 <li>Team player with excellent and effective communicator.</li>
@@ -26,8 +26,8 @@
             </ul>
             <hr>
         </div>
-        <div class="grid-item">
-            <h3 class="grid-item-heading">Tools</h3>
+        <div class="tools-grid">
+            <h3>Tools</h3>
             <p>
                 IntelliJ, Eclipse, Eclipse RCP, Gitlab, JIRA, Mockito, Zendesk, Postman, cURL, Linux , Jenkins, Maven,
                 LDAP, AD, Postgres, MySQL, OracleDB, Hibernate, SonarQube, Quartz, jaxb, AutoYaST, JSON, JWT, OIDC,
@@ -35,10 +35,10 @@
             </p>
             <hr>
         </div>
-        <div class="grid-item-experience">
-            <h3 class="grid-item-heading">Experience</h3>
+        <div class="experience-grid">
+            <h3>Experience</h3>
             <h4>ForgeRock / Support Engineer</h4>
-            <h5 class="grid-item-subtitle">September 2020 - Present</h5>
+            <h5>September 2020 - Present</h5>
             <ul>
                 <li>Supporting customer issues with Identity and Access Management products developed by ForgeRock, IDM
                     and AM covering areas of interest such as OAuth(2), OIDC, 2FA.</li>
@@ -54,7 +54,7 @@
                 </li>
             </ul>
             <h4>SCISYS / Software Engineer</h4>
-            <h5 class="grid-item-subtitle">September 2017 - August 2020</h5>
+            <h5>September 2017 - August 2020</h5>
             <ul>
                 <li>Worked on Mission Planning for the Galileo Ground Control Segment.</li>
                 <li>Implementing new requirements utilizing Java 8 features including improving the performance of
@@ -84,18 +84,18 @@
             </ul>
             <hr>
         </div>
-        <div class="grid-item">
-            <h3 class="grid-item-heading">Languages</h3>
+        <div class="languages-grid">
+            <h3>Languages</h3>
             <p>Java, Bash, Groovy, Javascript</p>
             <hr>
         </div>
-        <div class="grid-item">
-            <h3 class="grid-item-heading">Areas Of Interest</h3>
+        <div class="areasofinterest-grid">
+            <h3>Areas Of Interest</h3>
             <p>Docker, Kubernetes, Skaffold, Kustomize, Helm, GCP</p>
             <hr>
         </div>
-        <div class="grid-item">
-            <h3 class="grid-item-heading">Hobbies</h3>
+        <div class="hobbies-grid">
+            <h3>Hobbies</h3>
             <ul>
                 <li>Personal Projects: Currently configured RaspberryPi to work as a NAS for Photo Library and Media
                     Content. Future upgrades include adding Cloudflare DNS and openVPN passthrough include redundancy
@@ -106,30 +106,12 @@
             </ul>
             <hr>
         </div>
-        <div class="grid-item">
-            <h3 class="grid-item-heading">Duke of Edinburgh</h3>
-            <h5 class="grid-item-subtitle">2011 - 2014</h5>
-            <ul>
-                <li>Achieved the Gold award consisting of five parts; Volunteering, Sports, Skill, Residential and
-                    Expedition.</li>
-                <li>Volunteering at a hospital for 2 years serving patients their food, talking to them and keeping them
-                    company.</li>
-                <li>Playing hockey as part of my school team U15, U16s, U17s, U18s team.</li>
-                <li>Learning to play the guitar.</li>
-                <li>Involved with a charity to repair and restore canals that had been shut down by the railway industry
-                    in the 19th century.</li>
-                <li>Completing a 5 day expedition to Corsica hiking, working and navigating together cohesively as a
-                    team.
-                </li>
-            </ul>
-            <hr>
-        </div>
-        <div class="grid-item-education">
-            <h3 class="grid-item-heading">Education</h3>
+        <div class="education-grid">
+            <h3>Education</h3>
             <h4>MSc Computer Science / University of Birmingham</h4>
-            <h5 class="grid-item-subtitle">September 2016 - September 2017</h5>
+            <h5>September 2016 - September 2017</h5>
             <h4>BSc Chemistry w/ Pharmacology / University of Birmingham</h4>
-            <h5 class="grid-item-subtitle">September 2013 - July 2016</h5>
+            <h5>September 2013 - July 2016</h5>
             <hr>
         </div>
     </div>
@@ -145,9 +127,46 @@ export default {
 </script>
 
 <style>
+body {
+    padding: 100px 350px 0px 350px;
+    text-align: left;
+}
 
 /* May need to research and add column divisions instead of current implementation of grid-container.*/
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.header-left {
+    grid-column-end: span 1;
+}
+
+.header-right {
+    grid-column-end: span 1;
+    text-align: right;
+}
+
+.skills-grid {
+    grid-column-end: span 1;
+}
+
+.experience-grid {
+    grid-column-end: span 1;
+    grid-row-end: span 5;
+}
+
+h3 {
+    margin-top: 0px;
+    color: #d44500;
+}
+
+h4 {
+    margin-top: 0px;
+}
+
+/* All the configuration below is legacy and needs to be reused/removed. */
 div.grid-container-resume {
     display: grid;
     grid-template-areas: 'myArea myArea';
@@ -156,6 +175,7 @@ div.grid-container-resume {
     background-color: rgb(255, 255, 255);
     text-align: center;
     font-size: 20px;
+    /* padding: 20px; */
     padding: 0px 50px 0px 50px;
 }
 
@@ -169,7 +189,10 @@ div.grid-item-header-2 {
 }
 
 /* Need to figure out how to set the colour of the href to the desired value of #d44500.*/
-a.link, a.visited, a.active, a.hover {
+a.link,
+a.visited,
+a.active,
+a.hover {
     /* color: #d44500; */
     /* background-color: #d44500; */
     text-decoration: none;
@@ -177,6 +200,9 @@ a.link, a.visited, a.active, a.hover {
 
 div.grid-item {
     text-align: left;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    /* float: left; */
 }
 
 div.grid-item-experience {
@@ -190,14 +216,6 @@ div.grid-item-education {
     grid-area: 7 / 1 / span 4 / 1;
 }
 
-h3.grid-item-heading {
-    margin-top: 0px;
-    color: #d44500;
-}
-
-h4 {
-    margin-top: 0px;
-}
 
 h5.grid-item-subtitle {
     margin-top: 0px;
