@@ -1,8 +1,8 @@
 <template>
     <section class="navigation-bar">
-        <button onclick="location.href='/'">Home</button>
+        <button class="buttons" onclick="location.href='/'">Home</button>
         <!-- <router-link to="/">Home</router-link> -->
-        <button onclick="location.href='/resume'">Resume</button>
+        <button class="buttons" onclick="location.href='/resume'">Resume</button>
         <!-- <router-link to="/resume">Resume</router-link> -->
     </section>
     <!-- <div class="col-12 bg-light">
@@ -35,6 +35,7 @@ export default {
 }
 
 section.navigation-bar {
+    text-align: center;
     background-color: #d44500;
     position: fixed;
     height: 50px;
@@ -44,12 +45,15 @@ section.navigation-bar {
     right: 0px;
 }
 
-button {
+button.buttons {
+    padding: 10px;
     font-size: 20px;
     display: inline-block;
     background-color: #d44500;
     color: aliceblue;
-    /* border: 0; */
-    border-color: #d44500;
+    border-color: aliceblue;
+    border-style: 1px;
+    border-radius: 25%;
+    font-family: monospace;
 }
 </style>
