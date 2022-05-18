@@ -2,7 +2,9 @@
     <div class="grid-container">
         <div class="header-left">
             <h3>Abhishek Pai</h3>
-            <h4>Lyon, France (Remote)</h4>
+            <p>Lyon, France (Remote)</p>
+            <a href="http://github.com/abpai94">
+                http://github.com/abpai94</a>
         </div>
         <div class="header-right">
             <p><a href="tel:+44 7552 770334">
@@ -161,10 +163,8 @@ export default {
 </script>
 
 <style>
-
 body {
     padding: 100px 500px 0px 500px;
-    text-align: left;
 }
 
 .grid-container {
