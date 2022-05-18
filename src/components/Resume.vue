@@ -168,14 +168,12 @@ export default {
 </script>
 
 <style>
-body {
-    padding: 100px 500px 0px 500px;
-}
 
 .grid-container {
     font-family: roboto;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    padding: 100px 500px 0px 500px;
 }
 
 .header-left {
@@ -247,4 +245,3 @@ span c {
     color: #666666;
 }
 </style>
->>>>>>> PW-1
