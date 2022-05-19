@@ -144,6 +144,8 @@
                 <li>Climbing: Problem solving with friends to climb interesting routes.</li>
                 <li>
                     Cycling: Build endurance and stamina for 60km+ rides</li>
+                <li>Photography: Capturing, editing, archiving memories.
+                </li>
                 <li>
                     Reading: Books about economics, history, politics and science to learn and stimulate discussion.
                 </li>
