@@ -17,15 +17,7 @@ export default {
 </script>
 
 <style>
-* {
-    margin: 0px;
-    top: 0;
-    left: 0px;
-    right: 0px;
-    padding: 8px;
-}
-
-section.navigation-bar {
+.navigation-bar {
     text-align: center;
     background-color: #d44500;
     position: fixed;
@@ -36,7 +28,7 @@ section.navigation-bar {
     right: 0px;
 }
 
-button.buttons {
+.buttons {
     padding: 10px;
     font-size: 20px;
     display: inline-block;

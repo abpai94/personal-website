@@ -2,6 +2,7 @@
     <NavigationBar>
 
     </NavigationBar>
+    <router-view></router-view>
     <!-- <router-view>
         <KeepAlive>
             <MainPage :is="inActiveComponent" />

@@ -4,17 +4,12 @@ import MainPage from './MainPage.vue'
 import Home from "@/components/Home.vue"
 import Resume from "@/components/Resume.vue"
 import 'typeface-roboto/index.css'
+import { createTransformContext } from '@vue/compiler-core'
 
-createApp(MainPage).use(router).mount('#app')
+createApp(MainPage)
+    .use(router)
+    .mount('#MainPage')
 
-const app = createApp({
-    MainPage,
-    Home,
-    Resume
-})
-
-app.component(
-    'MainPage',
-    'HomePage',
-    'Resume'
-)
+createApp(Home)
+    .use(router)
+    // .mount('#Home')

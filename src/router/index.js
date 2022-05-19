@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from "vue-router"
 import Main from "@/MainPage.vue"
 import Home from "@/components/Home.vue"
 import Resume from "@/components/Resume.vue"
+import { nextTick } from "vue"
 
 const routes = [
     {
@@ -15,10 +16,7 @@ const routes = [
     {
         path: "/home",
         name: "HomePage",
-        component: Home,
-        meta: {
-            title: 'Abhishek Pai | Home'
-        }
+        component: Home
     },
     {
         path: "/resume",
@@ -35,6 +33,10 @@ const router = createRouter({
     routes
 })
 
-export default router
+// router.beforeEach((to, from) => {
+//     console.log("beforeEach")
+//     console.log(to)
+//     return to
+// })
 
-// Vue.use(router);
+export default router

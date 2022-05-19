@@ -1,33 +1,22 @@
 <template>
     <div class="splash-image">
-        <h1>Abhishek Pai</h1>
-        <h4>Software Engineer</h4>
-        <!-- <p>
-            <router-link to="/home">Enter</router-link>
-        </p> -->
+        <h1 class="header1">Abhishek Pai</h1>
+        <h4 class="header2">Software Engineer</h4>
         <router-view></router-view>
-        <a href="/home">Enter</a>
+        <router-link to="/home">Enter</router-link>
     </div>
 </template>
 
 <script>
 
 export default {
-    name: "MainPage",
-    metaInfo: {
-        title: "Main",
-        titleTemplate: '%s - Abhishek Pai | Software Engineer'
-    }
+    name: "MainPage"
 }
 </script>
 
 <style scoped>
-.body {
-    margin: 0px;
-    padding: 0px;
-}
 
-h1 {
+.header1 {
     position: absolute;
     left: 50%;
     top: 75%;
@@ -38,7 +27,7 @@ h1 {
     text-align: center;
 }
 
-h4 {
+.header2 {
     position: absolute;
     left: 50%;
     top: 85%;
@@ -49,8 +38,7 @@ h4 {
     text-align: center;
 }
 
-a,
-p {
+a, p {
     position: absolute;
     left: 50%;
     top: 90%;

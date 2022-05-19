@@ -2,6 +2,7 @@
     <NavigationBar>
 
     </NavigationBar>
+    <router-view></router-view>
     <div class="grid-container">
         <div class="header-left">
             <h3>Abhishek Pai</h3>
@@ -168,7 +169,6 @@ export default {
 </script>
 
 <style>
-
 .grid-container {
     font-family: roboto;
     display: grid;
@@ -223,24 +223,24 @@ export default {
     padding: 0px 20px 10px 10px;
 }
 
-h3 {
+.h3 {
     color: #d44500;
 }
 
-h4 {
+.h4 {
     margin-top: 0px;
 }
 
-h5 {
+.h5 {
     color: #666666;
     font-weight: normal;
 }
 
-span b {
+.span b {
     font-weight: normal;
 }
 
-span c {
+.span c {
     font-size: 15px;
     color: #666666;
 }
