@@ -1,31 +1,50 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <Resume msg="Using this to test the Resume." />
+  <div class='container'>
+    <div class='left-column'></div>
+    <div class='center-column'>
+      <MenuBar/>
+      <ResumePage/>
+    </div>
+    <div class='right-column'></div>
+  </div>
 </template>
 
 <script>
-import Resume from "./components/Resume.vue"
+import MenuBar from './components/MenuBar.vue'
+import ResumePage from './components/ResumePage.vue'
 
 export default {
   name: 'App',
   components: {
-    Resume
+    MenuBar,
+    ResumePage
   }
 }
 </script>
 
 <style>
+body {
+  padding: 5px 5px 5px 5px;
+}
+
+.container {
+  display: flex;
+  grid-template-columns: 1fr 1fr auto 1fr
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+.center-column {
+  padding: 5px 5px 5px 5px;
+  max-width: 900px;
+  flex: 0 0 auto;
+}
+
 * {
   margin: 0px;
   padding: 0px;
 }
-
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
 </style>
