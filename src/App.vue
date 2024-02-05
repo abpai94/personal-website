@@ -28,6 +28,8 @@ body {
 }
 
 .container {
+  max-width: 768px;
+  margin: 0 auto;
   display: flex;
   grid-template-columns: 1fr 1fr auto 1fr
 }
