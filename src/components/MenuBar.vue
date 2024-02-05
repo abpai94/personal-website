@@ -7,7 +7,7 @@
         <button class='menu-button' @click="open('https://hub.docker.com/u/abpai94')">Docker</button>
         <button class='menu-button' @click="open('https://www.credly.com/users/abpai94/badges')">Certification</button>
         <button class='menu-button' @click="open('https://dashboard.abhishekpai.co.uk')">Dashboard</button>
-        <button class='menu-button' @click="open('https://auth.abhishekpai.co.uk')">Login</button>
+        <button class='menu-button' @click="open('https://auth.abhishekpai.co.uk/?rd=https%3A%2F%2Fhomepage.abhishekpai.co.uk%2F&rm=GET')">Login</button>
     </div>
 </template>
 
