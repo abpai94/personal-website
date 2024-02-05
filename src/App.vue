@@ -39,7 +39,7 @@ body {
 
 .center-column {
   padding: 5px 5px 5px 5px;
-  max-width: 900px;
+  max-width: 850px;
   flex: 0 0 auto;
 }
 

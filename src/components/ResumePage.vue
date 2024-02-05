@@ -2,7 +2,6 @@
     <div class='header-left'>
         <h3>Abhishek Pai</h3>
         <p>Lyon, France (Remote)</p>
-        <a href='http://github.com/abpai94'>http://github.com/abpai94</a>
     </div>
     <div class='header-right'>
         <p><a href='tel:+44 7552 770334'>+44 7552 770334</a></p>
@@ -22,7 +21,6 @@
             <div class='subtitle-grid'><h3>Experience</h3></div>
             <div class='company-grid'>
                 <h4>IdentIT<span><b> / Consultant Engineer </b></span><span>
-                        <c>(Identity and Access Management Industry)</c>
                     </span></h4>
                 <h5>August 2022 - Present</h5>
             </div>
@@ -43,7 +41,6 @@
             </div>
             <div class='company-grid'>
                 <h4>ForgeRock<span><b> / Support Engineer </b></span><span>
-                        <c>(Identity and Access Management Industry)</c>
                     </span></h4>
                 <h5>September 2020 - Present (1 year 8 months)</h5>
             </div>
@@ -63,7 +60,6 @@
             </div>
             <div class='company-grid'>
                 <h4>SCISYS<span><b> / Software Engineer </b></span><span>
-                        <c>(Space Industry)</c>
                     </span></h4>
                 <h5>September 2017 - August 2020 (3 years)</h5>
             </div>
@@ -166,7 +162,7 @@
 .main-body-left,
 .main-body-right {
     float: left;
-    width: 66%;
+    width: 60%;
 }
 
 .main-body-right {
