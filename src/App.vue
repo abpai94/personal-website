@@ -1,30 +1,50 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <MainPage msg="This is a testvalue that I want returned back to the MainPage.vue" />
+  <div class='container'>
+    <div class='left-column'></div>
+    <div class='center-column'>
+      <MenuBar/>
+      <ResumePage/>
+    </div>
+    <div class='right-column'></div>
+  </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import MainPage from "./components/MainPage.vue"
-
+import MenuBar from './components/MenuBar.vue'
+import ResumePage from './components/ResumePage.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
-    MainPage
+    MenuBar,
+    ResumePage
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  padding: 5px 5px 5px 5px;
+}
+
+.container {
+  display: flex;
+  grid-template-columns: 1fr 1fr auto 1fr
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+.center-column {
+  padding: 5px 5px 5px 5px;
+  max-width: 850px;
+  flex: 0 0 auto;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 </style>
