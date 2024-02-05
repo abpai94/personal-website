@@ -10,15 +10,21 @@
     </div>
     <div class='main-body-left'>
         <div class='skills-grid'>
-            <div class='subtitle-grid'><h3>Skills</h3></div>
+            <div class='subtitle-grid'>
+                <h3>Skills</h3>
+            </div>
             <ul>
                 <p>Passionate to work in a cohesive and collaborative team environment developing creative ideas and
                     concepts.</p>
             </ul>
-            <div class="horizontal-separator"><hr></div>
+            <div class="horizontal-separator">
+                <hr>
+            </div>
         </div>
         <div class='experience-grid'>
-            <div class='subtitle-grid'><h3>Experience</h3></div>
+            <div class='subtitle-grid'>
+                <h3>Experience</h3>
+            </div>
             <div class='company-grid'>
                 <h4>IdentIT<span><b> / Consultant Engineer </b></span><span>
                     </span></h4>
@@ -32,6 +38,7 @@
                     <li>Integrating Itsme SSO Framework with IAM stack.</li>
                     <li>SMS OTP User flow implementation.</li>
                     <li>Custom Java and scripted nodes for Tree development.</li>
+                    <li>SpringBoot Microservice development and bug fixes.</li>
                     <li>Refactoring AM v7.1 for v7.3 Upgrade.</li>
                     <li>Implementing and improving Ansible playbooks.</li>
                     <li>Automating AM CI/CD Jenkins pipeline with Amster.</li>
@@ -82,34 +89,46 @@
     </div>
     <div class='main-body-right'>
         <div class='education-grid'>
-            <div class='subtitle-grid'><h3>Education</h3></div>
+            <div class='subtitle-grid'>
+                <h3>Education</h3>
+            </div>
             <h4>MSc Computer Science</h4>
             <p>University of Birmingham</p>
             <h5>September 2016 - September 2017</h5>
             <h4>BSc Chemistry w/ Pharmacology</h4>
             <p>University of Birmingham</p>
             <h5>September 2013 - July 2016</h5>
-            <div class="horizontal-separator"><hr></div>
+            <div class="horizontal-separator">
+                <hr>
+            </div>
         </div>
         <div class='languages-grid'>
-            <div class='subtitle-grid'><h3>Languages</h3></div>
+            <div class='subtitle-grid'>
+                <h3>Languages</h3>
+            </div>
             <div class='block-details'>
                 <li>English - Fluent</li>
                 <li>French - A2</li>
             </div>
-            <div class="horizontal-separator"><hr></div>
+            <div class="horizontal-separator">
+                <hr>
+            </div>
         </div>
         <div class='tools-grid'>
-            <div class='subtitle-grid'><h3>Tools</h3></div>
-            <p>Java Bash Linux MySQL PostgreSQL OracleDB HibernateORM LDAP AD </p>
-            <p>
-                IntelliJ Eclipse Git Log4J JUnit Mockito JaCoCo SonarQube Jenkins Maven Postman cURL OAuth OIDC JWT
-                JSON
-            </p>
-            <div class="horizontal-separator"><hr></div>
+            <div class='subtitle-grid'>
+                <h3>Tools</h3>
+            </div>
+            <div class="tools-square">
+                <div class="square" v-for="item in squares" :key="item.id">{{ item.text }}</div>
+            </div>
+        </div>
+        <div class="horizontal-separator">
+            <hr>
         </div>
         <div class='certification-grid'>
-            <div class='subtitle-grid'><h3>Certification</h3></div>
+            <div class='subtitle-grid'>
+                <h3>Certification</h3>
+            </div>
             <div class='block-details'>
                 <ul>
                     <li>Linux Foundation IT Associate</li>
@@ -119,15 +138,20 @@
                     <li>ForgeRock Access Management</li>
                 </ul>
             </div>
-            <div class="horizontal-separator"><hr></div>
+            <div class="horizontal-separator">
+                <hr>
+            </div>
         </div>
         <div class='personalprojects-grid'>
-            <div class='subtitle-grid'><h3>Personal Projects</h3></div>
+            <div class='subtitle-grid'>
+                <h3>Personal Projects</h3>
+            </div>
             <p>Raspberry Pi Home Server</p>
             <div class='block-details'>
                 <ul>
                     <li>Ansible Deployment Automation</li>
                     <li>Docker compose configuration</li>
+                    <li>Resume Webpage Development</li>
                     <li>Wireguard VPN</li>
                     <li>RAID for photo archive</li>
                     <li>GCP Bucket backups via cronjobs</li>
@@ -141,10 +165,36 @@
 </template>
 
 <script>
+export default {
+    data() {
+        return {
+            squares: [
+                { id: 1, text: "Amster" },
+                { id: 2, text: "AM" },
+                { id: 3, text: "Ansible" },
+                { id: 4, text: "Jenkins" },
+                { id: 5, text: "Linux" },
+                { id: 6, text: "Docker" },
+                { id: 7, text: "Traefik" },
+                { id: 8, text: "Git" },
+                { id: 9, text: "Java" },
+                { id: 10, text: "Bash" },
+                { id: 11, text: "SQL" },
+                { id: 12, text: "Maven" },
+                { id: 13, text: "LDAP" },
+                { id: 14, text: "Postman" },
+                { id: 15, text: "Sonar" },
+                { id: 16, text: "Mockito" }
+            ],
+        };
+    }
+}
 </script>
 
 <style>
-
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 .header-left,
 .header-right {
     float: left;
@@ -167,7 +217,7 @@
 
 .main-body-right {
     float: right;
-    max-width: 300px;
+    max-width: 325px;
 }
 
 .experience-grid {
@@ -180,9 +230,12 @@
 }
 
 .company-grid,
-.company-summary,
 .subtitle-grid {
     padding: 10px 0px 10px 0px;
+}
+
+.company-summary {
+    padding: 0px 0px 10px 0px;
 }
 
 .block-details {
@@ -197,6 +250,24 @@ h3 {
 h5 {
     color: #666666;
     font-weight: normal;
+}
+
+.square {
+    width: fit-content;
+    border: 1px solid #d44500;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #d44500;
+    color: white;
+    float: left;
+    margin: 1px;
+    font-size: 12.5px;
+}
+
+.tools-grid {
+    float: inline-start;
+    padding-bottom: 10px;
 }
 
 span b {
