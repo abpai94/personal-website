@@ -2,33 +2,38 @@
   <div class='container'>
     <div class='left-column'></div>
     <div class='center-column'>
-      <MenuBar/>
-      <ResumePage/>
+      <div>
+        <MenuBar/>
+      </div>
+      <router-view/>
     </div>
     <div class='right-column'></div>
   </div>
 </template>
 
 <script>
-import MenuBar from './components/MenuBar.vue'
-import ResumePage from './components/ResumePage.vue'
+import MenuBar from './views/menu-bar.vue'
 
 export default {
   name: 'App',
   components: {
-    MenuBar,
-    ResumePage
+    MenuBar
   }
 }
 </script>
 
 <style>
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-color: #303030;
+    color: white; */
+}
+
 body {
   padding: 5px 5px 5px 5px;
 }
 
 .container {
-  max-width: 768px;
   margin: 0 auto;
   display: flex;
   grid-template-columns: 1fr 1fr auto 1fr
@@ -42,7 +47,6 @@ body {
 .center-column {
   padding: 5px 5px 5px 5px;
   max-width: 850px;
-  flex: 0 0 auto;
 }
 
 * {

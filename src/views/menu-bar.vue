@@ -1,6 +1,7 @@
 <template>
     <div class='menu-bar'>
-        <button class='menu-button' @click="open('https://www.abhishekpai.co.uk')">Home</button>
+        <router-link class='menu-button' to='/'>Home</router-link>
+        <router-link class='menu-button' to='/resume'>Resume</router-link>
         <!-- <button class='menu-button' @Click="downloadAsset('assets/Resume.pdf')">Resume</button> -->
         <button class='menu-button' @click="open('https://www.linkedin.com/in/abpai94')">LinkedIn</button>
         <button class='menu-button' @click="open('http://github.com/abpai94')">GitHub</button>
@@ -39,6 +40,8 @@ export default {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    font-size:15px;
 }
 
 .menu-button:hover {
