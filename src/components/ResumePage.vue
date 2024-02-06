@@ -28,7 +28,7 @@
             <div class='company-grid'>
                 <h4>IdentIT<span><b> / Consultant Engineer </b></span><span>
                     </span></h4>
-                <h5>August 2022 - Present</h5>
+                <h5>August 2022 - December 2023</h5>
             </div>
             <div class='company-summary'>
                 <p>Implementing custom ForgeRock IAM stack for Proximus.</p>
@@ -49,7 +49,7 @@
             <div class='company-grid'>
                 <h4>ForgeRock<span><b> / Support Engineer </b></span><span>
                     </span></h4>
-                <h5>September 2020 - Present (1 year 8 months)</h5>
+                <h5>September 2020 - April 2022</h5>
             </div>
             <div class='company-summary'>
                 <p>Support and resolve customer’s issues with IAM products.</p>
@@ -68,7 +68,7 @@
             <div class='company-grid'>
                 <h4>SCISYS<span><b> / Software Engineer </b></span><span>
                     </span></h4>
-                <h5>September 2017 - August 2020 (3 years)</h5>
+                <h5>September 2017 - August 2020</h5>
             </div>
             <div class='company-summary'>
                 <p>Feature development for Galileo ground control segment ESA.</p>
@@ -119,7 +119,7 @@
                 <h3>Tools</h3>
             </div>
             <div class="tools-square">
-                <div class="square" v-for="item in squares" :key="item.id">{{ item.text }}</div>
+                <button class="square" @click="handleClick(item)" v-for="item in squares" :key="item.id">{{ item.text }}</button>
             </div>
         </div>
         <div class="horizontal-separator">
@@ -146,7 +146,8 @@
             <div class='subtitle-grid'>
                 <h3>Personal Projects</h3>
             </div>
-            <p>Raspberry Pi Home Server</p>
+            <div class='company-summary'>
+                Raspberry Pi Home Server</div>
             <div class='block-details'>
                 <ul>
                     <li>Ansible Deployment Automation</li>
@@ -169,24 +170,29 @@ export default {
     data() {
         return {
             squares: [
-                { id: 1, text: "Amster" },
-                { id: 2, text: "AM" },
-                { id: 3, text: "Ansible" },
-                { id: 4, text: "Jenkins" },
-                { id: 5, text: "Linux" },
-                { id: 6, text: "Docker" },
-                { id: 7, text: "Traefik" },
-                { id: 8, text: "Git" },
-                { id: 9, text: "Java" },
-                { id: 10, text: "Bash" },
-                { id: 11, text: "SQL" },
-                { id: 12, text: "Maven" },
-                { id: 13, text: "LDAP" },
-                { id: 14, text: "Postman" },
-                { id: 15, text: "Sonar" },
-                { id: 16, text: "Mockito" }
+                { id: 1, text: "Amster", link: "https://backstage.forgerock.com/docs/amster/7.4/user-guide/amster-introduction.html" },
+                { id: 2, text: "AM", link: "https://backstage.forgerock.com/docs/am/7.4/eval-guide/about-am.html"},
+                { id: 3, text: "Ansible", link: "https://www.ansible.com/overview/how-ansible-works" },
+                { id: 4, text: "Jenkins", link: "https://www.jenkins.io" },
+                { id: 5, text: "Linux", link: "https://www.redhat.com/en/topics/linux/what-is-linux" },
+                { id: 6, text: "Docker", link: "https://www.docker.com/get-started/" },
+                { id: 7, text: "Traefik", link: "https://traefik.io/traefik/" },
+                { id: 8, text: "Git", link: "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F" },
+                { id: 9, text: "Java",  link: "https://www.java.com/en/download/help/whatis_java.html" },
+                { id: 10, text: "Bash", link: "https://opensource.com/resources/what-bash"  },
+                { id: 11, text: "SQL", link: "https://dev.mysql.com/doc/refman/8.0/en/what-is-mysql.html"  },
+                { id: 12, text: "Maven", link: "https://maven.apache.org/what-is-maven.html"  },
+                { id: 13, text: "LDAP", link: "https://www.redhat.com/en/topics/security/what-is-ldap-authentication"  },
+                { id: 14, text: "Postman", link: "https://www.postman.com/product/what-is-postman/"  },
+                { id: 15, text: "Sonar", link: "https://www.sonarsource.com/products/sonarqube/"  },
+                { id: 16, text: "Mockito", link: "https://site.mockito.org/"  }
             ],
         };
+    },
+    methods: {
+        handleClick(item) {
+            window.location.href = item.link;
+        }
     }
 }
 </script>
@@ -195,6 +201,7 @@ export default {
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
 .header-left,
 .header-right {
     float: left;
@@ -263,6 +270,11 @@ h5 {
     float: left;
     margin: 1px;
     font-size: 12.5px;
+}
+
+.square:hover {
+    background-color: white;
+    color: #d44500;
 }
 
 .tools-grid {

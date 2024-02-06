@@ -34,12 +34,15 @@ export default {
 
 .menu-button {
     padding: 8px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #d44500;
+    background-color: #d44500;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .menu-button:hover {
-    background-color: #f5f5f5;
+    background-color: white;
+    color: #d44500;
 }
 </style>
