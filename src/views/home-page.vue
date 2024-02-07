@@ -8,7 +8,7 @@
         <br>
         <img class="cycling-img" src="../assets/cycling.jpg" alt="Cycling">
         <p>Thank you for visiting my page. My name is Abhishek Pai, one of my hobbies is to experiment with tech aside from
-            cycling or bouldering on-occasion. I have the privilege of working the tech indsutry initially starting off as a
+            cycling or bouldering on-occasion. I have the privilege of working in the tech indsutry initially starting off as a
             Software Engineer but more recently moving towards IAM, SysAdmin and DevOps roles.</p>
         <br>
         <p>My Resume, GitHub and other resources are linked above so feel free to browse the code related to both my website
@@ -18,10 +18,9 @@
         <h2>Server Infrastructure</h2>
         <img class="franklin-img" src="../assets/franklin.jpg" alt="Franklin">
         <p>Over the years I have started working on creating home server with the help of two Raspberry Pi's (3B & 4B+). The
-            first raspberry pi was called Franklin. This handles the ingress into my home network with a port open for
-            WireGuard VPN while another two ports open for HTTP and HTTPS. I recently started hosting this website on
-            Franklin along with Traefik to reverse proxy to authentcation and other services I wish to access on my personal
-            cloud.</p>
+            first raspberry pi was called Franklin. This handles the ingress into my home network via the WireGuard VPN or HTTPS.
+             I recently started hosting this website on Franklin along with Traefik to reverse proxy to authentcation and other 
+             services I wish to access on my personal cloud.</p>
         <br>
         <img class="eleanor-img" src="../assets/eleanor.jpg" alt="Eleanor">
         <p>Inaddition I have a second Raspberry Pi that handles the NAS component of my home server setup called Eleanor.
