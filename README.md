@@ -11,12 +11,14 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Compiles and minifies for production
+```
+npm run build
+sudo docker buildx build --platform linux/arm64 . -t abpai94/personal-website
+sudo docker push abpai94/personal-website:latest
 ```
