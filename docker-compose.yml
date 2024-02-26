@@ -1,0 +1,16 @@
+---
+version: "3.3"
+services:
+  personal-website:
+    container_name: personal-website
+    image: abpai94/personal-website:latest
+    networks:
+      proxy:
+        ipv4_address: 172.24.0.9
+    ports:
+      - 82:80
+    restart: unless-stopped
+
+networks:
+  proxy:
+    external: true
