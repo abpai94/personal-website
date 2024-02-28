@@ -1,0 +1,19 @@
+# TODO
+# git pull
+# npm run build
+# sudo docker buildx build --platform linux/arm64 . -t abpai94/personal-website
+# sudo docker push abpai94/personal-website:latest
+- name: Pull personal-website repo
+  become: false
+  local_action:
+    module: git
+    repo: 'git@github.com:abpai94/personal-website.git'
+    dest: personal-website
+    key_file: ~/.ssh/id_rsa.pub
+    update: true
+- name: NPM build
+  become: false
+  local_action:
+    module: command
+    cmd: npm run build
+    chdir: personal-website
