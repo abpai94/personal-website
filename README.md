@@ -19,6 +19,6 @@ npm run lint
 ### Compiles and minifies for production
 ```
 npm run build
-sudo docker buildx build --platform linux/arm64 . -t abpai94/personal-website
+sudo docker build . -t abpai94/personal-website
 sudo docker push abpai94/personal-website:latest
 ```
